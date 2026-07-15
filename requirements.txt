@@ -1,0 +1,10 @@
+# Extra packages added on top of the official apache/airflow base image.
+# Do NOT add apache-airflow, SQLAlchemy, or psycopg2-binary here —
+# they are already pre-installed in the base image and pinned by Airflow.
+pandas==2.2.2
+requests==2.32.3
+python-dotenv==1.0.1
+
+# Testing (only used locally, not needed inside Docker)
+pytest==8.2.2
+pytest-mock==3.14.0
